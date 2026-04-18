@@ -1,6 +1,6 @@
 ---
 title: "HW3: Calling an LLM with Bedrock"
-author: "YJaren Figueiredo"
+author: "Jaren Figueiredo"
 date: "2026-04-18"
 ---
 
