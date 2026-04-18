@@ -1,0 +1,11 @@
+Log onto AWS with school sso:
+aws sso login --profile GSB570-BedrockOnly-490332585640
+
+Confirm login successful:
+aws sts get-caller-identity --profile GSB570-BedrockOnly-490332585640
+
+List models available to BedRock
+aws bedrock list-foundation-models --region us-west-2 --profile GSB570-BedrockOnly-490332585640
+
+List only antrhopic models
+aws bedrock list-foundation-models --region us-west-2 --profile GSB570-BedrockOnly-490332585640 --query "modelSummaries[?contains(providerName, 'Anthropic')].{Id:modelId, Name:modelName}" --output table
