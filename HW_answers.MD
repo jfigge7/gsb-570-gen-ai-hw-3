@@ -121,9 +121,7 @@ Assistant:" They want the assistant to relay back their previous query. The prev
 Of course, the first response cuts off its answer when it hits the `max_tokens` limit, currently set at 500 tokens.
 
 ## 4. Use a classifier to decide which LLM you will call for an answer. For complex questions choose a simple model and for complex queries call a more complex model. What else do you think you could use a classifier for?
-I wrote a classifier (actually not using AI believe it or not), and the code can be found in the attached github repo.
-The system prompt can be found in `classfier_instructions.txt`, which I had AI write for me.  I could write a classfier for 
-a ton of prompts.  For instance, if I want a homework helper, my classifier could determine the type of problem the user wants 
+I wrote a classifier (actually not using AI believe it or not), and the code can be found in [my github repo](https://github.com/jfigge7/gsb-570-gen-ai-hw-3/tree/master), which used [classify_prompt.py](https://github.com/jfigge7/gsb-570-gen-ai-hw-3/blob/master/classify_prompt.py) to classify prompts and [call_model_hw2.py](https://github.com/jfigge7/gsb-570-gen-ai-hw-3/blob/master/call_model_hw2.py) to actually call the model based on the user query. The system prompt can be found in [classfier_instructions.txt](https://github.com/jfigge7/gsb-570-gen-ai-hw-3/blob/master/classifier_instructions.txt), which I had AI write for me.  I could write a classfier for a ton of prompts.  For instance, if I want a homework helper, my classifier could determine the type of problem the user wants 
 help with, and based on the classifier, I could alter the system prompt to steer the LLM towards the subject in question.
 Examples:
 ```
