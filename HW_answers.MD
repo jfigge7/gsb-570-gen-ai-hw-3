@@ -1,3 +1,11 @@
+---
+title: "HW3: Calling an LLM with Bedrock"
+author: "YJaren Figueiredo"
+date: "2026-04-18"
+---
+
+Github repo can be found [here](https://github.com/jfigge7/gsb-570-gen-ai-hw-3/tree/master)
+
 ## 1. What happens when you ask the model what the current day is or when were you trained? Is this expected behaviour?
 (Using `deepseek.v3.2`)
 Current day:
